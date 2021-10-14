@@ -5,9 +5,9 @@ services:
         image: mysql:5.7
         environment:
             - MYSQL_ROOT_PASSWORD=somerootpass
-            - MYSQL_PASSWORD=somepass
+            - MYSQL_PASSWORD=admin
             - MYSQL_DATABASE=dockerizeme_db
-            - MYSQL_USER=someuser
+            - MYSQL_USER=admin
     web:
         build: .
         ports:
